@@ -6,9 +6,11 @@ import { SharedComponent } from './shared.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HomeScreenComponent } from './components/home-screen/home-screen.component';
 
+const components = [SharedComponent, HeaderComponent, HomeScreenComponent];
+
 @NgModule({
-  declarations: [SharedComponent, HeaderComponent, HomeScreenComponent],
+  declarations: [...components],
   imports: [CommonModule, SharedRoutingModule],
-  exports: [SharedComponent],
+  exports: [...components],
 })
 export class SharedModule {}
