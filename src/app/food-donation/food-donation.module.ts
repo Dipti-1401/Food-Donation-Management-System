@@ -6,7 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { FoodDonationComponent } from './food-donation.component';
 
 @NgModule({
-  declarations: [FoodDonationComponent],
+  declarations: [],
   imports: [CommonModule, FoodDonationRoutingModule, SharedModule],
 })
 export class FoodDonationModule {}
