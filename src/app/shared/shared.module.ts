@@ -4,14 +4,9 @@ import { CommonModule } from '@angular/common';
 import { SharedRoutingModule } from './shared-routing.module';
 import { SharedComponent } from './shared.component';
 
-
 @NgModule({
-  declarations: [
-    SharedComponent
-  ],
-  imports: [
-    CommonModule,
-    SharedRoutingModule
-  ]
+  declarations: [SharedComponent],
+  imports: [CommonModule, SharedRoutingModule],
+  exports: [SharedComponent],
 })
-export class SharedModule { }
+export class SharedModule {}
