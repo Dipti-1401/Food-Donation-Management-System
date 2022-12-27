@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { FoodDonationComponent } from './food-donation/food-donation.component';
 import { FoodDonationModule } from './food-donation/food-donation.module';
 import { SharedModule } from './shared/shared.module';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,8 @@ import { SharedModule } from './shared/shared.module';
     BrowserModule,
     AppRoutingModule,
     FoodDonationModule,
+    NgbModule,
+    BrowserAnimationsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
