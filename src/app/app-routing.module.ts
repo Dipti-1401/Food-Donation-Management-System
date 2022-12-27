@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { FoodDonationComponent } from './food-donation/food-donation.component';
+import { HomeScreenComponent } from './shared/components/home-screen/home-screen.component';
 
 const routes: Routes = [
   {
@@ -10,7 +11,7 @@ const routes: Routes = [
   },
   {
     path:'home',
-    component:FoodDonationComponent,
+    component:HomeScreenComponent,
   }
 ];
 
